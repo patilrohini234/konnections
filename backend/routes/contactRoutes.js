@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const { protect } = require("../middleware/authMiddleware.js");
+const { protect } = require("../middleware/authmiddleware.js");
 const { searchByName, getByContactNumber } = require("../controllers/contacts");
 
 router.route("/").get(protect, searchByName);
